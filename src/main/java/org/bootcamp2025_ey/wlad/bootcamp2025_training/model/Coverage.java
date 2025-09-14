@@ -8,23 +8,11 @@ import jakarta.persistence.Id;
 import java.math.BigDecimal;
 
 @Entity
-public class Coverage {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+public class Coverage extends BaseEntity {
 
     private String name;
     private String description;
     private BigDecimal sumCovered;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;

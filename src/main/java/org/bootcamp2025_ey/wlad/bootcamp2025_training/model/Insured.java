@@ -7,11 +7,8 @@ import java.util.Set;
 
 @Entity
 @Table(name = "insureds")
-public class Insured {
+public class Insured extends BaseEntity {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
 
     @Column(name = "full_name", nullable = false, length = 120)
     private String fullName;
@@ -31,14 +28,6 @@ public class Insured {
         this.fullName = fullName;
         this.birthDate = birthDate;
         this.customerAddress = customerAddress;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getFullName() {
