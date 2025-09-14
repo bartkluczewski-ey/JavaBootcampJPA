@@ -1,6 +1,6 @@
-package org.bootcamp2025_ey.wlad.bootcamp2025_training.services;
+package org.bootcamp2025_ey.wlad.bootcamp2025_training.service;
 
-import jakarta.transaction.Transactional;
+import org.springframework.transaction.annotation.Transactional;
 import org.bootcamp2025_ey.wlad.bootcamp2025_training.model.Policy;
 import org.bootcamp2025_ey.wlad.bootcamp2025_training.repository.PolicyRepository;
 import org.springframework.stereotype.Service;

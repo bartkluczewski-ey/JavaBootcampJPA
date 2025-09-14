@@ -1,4 +1,4 @@
-package org.bootcamp2025_ey.wlad.bootcamp2025_training.services;
+package org.bootcamp2025_ey.wlad.bootcamp2025_training.service;
 
 import org.bootcamp2025_ey.wlad.bootcamp2025_training.model.Insured;
 import org.bootcamp2025_ey.wlad.bootcamp2025_training.repository.InsuredCustomDAOJPA;
