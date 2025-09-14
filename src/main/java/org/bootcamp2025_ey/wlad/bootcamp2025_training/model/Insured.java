@@ -1,5 +1,6 @@
 package org.bootcamp2025_ey.wlad.bootcamp2025_training.model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 import java.util.LinkedHashSet;
@@ -18,6 +19,7 @@ public class Insured extends BaseEntity {
     @JoinColumn(name = "address_id")
     private CustomerAddress customerAddress;
 
+    @JsonManagedReference
     @OneToMany(mappedBy = "insured", orphanRemoval = true)
     private Set<Policy> policies = new LinkedHashSet<>();
 

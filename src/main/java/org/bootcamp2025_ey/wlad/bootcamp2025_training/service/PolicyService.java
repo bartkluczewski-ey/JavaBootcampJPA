@@ -32,4 +32,26 @@ public class PolicyService {
         return policyRepository.findAll();
     }
 
+    @Transactional(readOnly = true)
+    public List<Policy> getPoliciesByCity(String city){
+        return policyRepository.findPoliciesByInsuredCity(city);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

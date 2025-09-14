@@ -1,5 +1,6 @@
 package org.bootcamp2025_ey.wlad.bootcamp2025_training.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
 import java.util.LinkedHashSet;
@@ -10,6 +11,7 @@ public class Policy extends BaseEntity {
 
     private String policyNumber;
 
+    @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "insured_id")
     private Insured insured;

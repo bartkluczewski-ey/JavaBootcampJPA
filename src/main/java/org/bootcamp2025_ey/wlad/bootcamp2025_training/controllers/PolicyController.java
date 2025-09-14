@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/policies")
+@RequestMapping("/policies")
 public class PolicyController {
 
     private final PolicyService policyService;
@@ -36,4 +36,9 @@ public class PolicyController {
         return ResponseEntity.ok(policy);
     }
 
+    @GetMapping("/city/{city}")
+    public ResponseEntity<List<Policy>> getPoliciesByCity(@PathVariable String city){
+        List<Policy> policies = policyService.getPoliciesByCity(city);
+        return ResponseEntity.ok(policies);
+    }
 }
