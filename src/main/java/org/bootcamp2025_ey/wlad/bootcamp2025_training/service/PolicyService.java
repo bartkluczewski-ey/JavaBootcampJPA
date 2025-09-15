@@ -37,21 +37,4 @@ public class PolicyService {
         return policyRepository.findPoliciesByInsuredCity(city);
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
