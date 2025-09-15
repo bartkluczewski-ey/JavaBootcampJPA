@@ -1,7 +1,7 @@
-package org.bootcamp2025_ey.wlad.bootcamp2025_training.controlers;
+package org.bootcamp2025_ey.wlad.bootcamp2025_training.controllers;
 
 import org.bootcamp2025_ey.wlad.bootcamp2025_training.model.Insured;
-import org.bootcamp2025_ey.wlad.bootcamp2025_training.services.InsuredService;
+import org.bootcamp2025_ey.wlad.bootcamp2025_training.service.InsuredService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 

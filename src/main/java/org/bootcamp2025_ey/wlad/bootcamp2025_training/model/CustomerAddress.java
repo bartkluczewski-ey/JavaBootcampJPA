@@ -4,11 +4,7 @@ package org.bootcamp2025_ey.wlad.bootcamp2025_training.model;
 import jakarta.persistence.*;
 
 @Entity
-public class CustomerAddress {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+public class CustomerAddress extends BaseEntity{
 
     private String postalCode;
     private String address;
